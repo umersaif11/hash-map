@@ -14,3 +14,5 @@ class hashMap {
         return hashCode;
     }
 }
+
+export { hashMap }
