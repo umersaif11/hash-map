@@ -40,6 +40,7 @@ class hashMap {
     constructor() {
         this.loadfactor = 0.75;
         this.capacity = 16;
+        this.buckets = new Array(this.capacity);
     }
     hash(key) {
         let hashCode = 0;
@@ -51,6 +52,7 @@ class hashMap {
         }
         return hashCode;
     }
+
 }
 
 export { hashMap }
