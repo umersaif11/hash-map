@@ -28,7 +28,9 @@ class LinkedList {
     getFromList(key) {
         let current = this.head;
         while(current.next) {
-            
+            if(current.key === key) {
+                return current.value;
+            }
         }
     }
 }
