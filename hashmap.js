@@ -11,6 +11,9 @@ class LinkedList {
     }
     addToList(key, value) {
         const node = new Node(key, value);
+        if(!this.head) {
+            this.head = node;
+        }
     }
 }
 class hashMap {
