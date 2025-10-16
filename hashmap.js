@@ -25,6 +25,9 @@ class LinkedList {
         }
         current.next = node;
     }
+    getFromList(key) {
+        
+    }
 }
 class hashMap {
     constructor() {
