@@ -23,6 +23,7 @@ class LinkedList {
                 current = current.next;
             }
         }
+        current.next = node;
     }
 }
 class hashMap {
