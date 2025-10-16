@@ -54,6 +54,9 @@ class hashMap {
     }
     set(key, value) {
         const hashValue = this.hash(key);
+        if(this.buckets[hashValue] == null) {
+            this.buckets[hashValue] = new LinkedList();
+        }
     }
 
 }
