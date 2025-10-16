@@ -52,6 +52,9 @@ class hashMap {
         }
         return hashCode;
     }
+    set(key, value) {
+        
+    }
 
 }
 
