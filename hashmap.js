@@ -16,7 +16,9 @@ class LinkedList {
         } else {
             let current = this.head;
             while(current.next) {
-                
+                if(current.key === key) {
+                    current.value = value;
+                }
             }
         }
     }
