@@ -13,6 +13,8 @@ class LinkedList {
         const node = new Node(key, value);
         if(!this.head) {
             this.head = node;
+        } else {
+            let current = this.head;
         }
     }
 }
