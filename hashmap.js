@@ -9,6 +9,9 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
+    addToList(key, value) {
+        
+    }
 }
 class hashMap {
     constructor() {
