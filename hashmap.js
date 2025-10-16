@@ -57,6 +57,7 @@ class hashMap {
         if(this.buckets[hashValue] == null) {
             this.buckets[hashValue] = new LinkedList();
         }
+        this.buckets[hashValue].addToList(key, value);
     }
 
 }
