@@ -53,7 +53,7 @@ class hashMap {
         return hashCode;
     }
     set(key, value) {
-        
+        const hashValue = this.hash(key);
     }
 
 }
