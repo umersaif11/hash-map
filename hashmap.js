@@ -26,7 +26,10 @@ class LinkedList {
         current.next = node;
     }
     getFromList(key) {
-        
+        let current = this.head;
+        while(current.next) {
+            
+        }
     }
 }
 class hashMap {
