@@ -33,6 +33,7 @@ class LinkedList {
             }
             current = current.next;
         }
+        return null;
     }
 }
 class hashMap {
