@@ -10,7 +10,7 @@ class LinkedList {
         this.head = null;
     }
     addToList(key, value) {
-        
+        const node = new Node(key, value);
     }
 }
 class hashMap {
