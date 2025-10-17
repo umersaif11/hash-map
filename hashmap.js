@@ -55,6 +55,9 @@ class hashMap {
         }
         const list = this.buckets[hashValue];
         const existingNode = list.getFromList(key);
+        if(existingNode) {
+            existingNode.value = value;
+        }
     }
 
 }
