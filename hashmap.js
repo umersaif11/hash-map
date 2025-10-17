@@ -63,6 +63,9 @@ class hashMap {
             this.size++;
         }
     }
+    length() {
+        return this.size;
+    }
 
 }
 
