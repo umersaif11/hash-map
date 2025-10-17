@@ -53,7 +53,8 @@ class hashMap {
         if(this.buckets[hashValue] == null) {
             this.buckets[hashValue] = new LinkedList();
         }
-        this.buckets[hashValue].addToList(key, value);
+        const list = this.buckets[hashValue];
+        const existingNode = list.getFromList(key);
     }
 
 }
