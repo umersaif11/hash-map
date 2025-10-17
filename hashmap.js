@@ -60,6 +60,7 @@ class hashMap {
             existingNode.value = value;
         } else {
             list.addToList(key, value);
+            this.size++;
         }
     }
 
