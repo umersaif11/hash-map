@@ -37,6 +37,7 @@ class hashMap {
         this.loadfactor = 0.75;
         this.capacity = 16;
         this.buckets = new Array(this.capacity);
+        this.size = 0;
     }
     hash(key) {
         let hashCode = 0;
