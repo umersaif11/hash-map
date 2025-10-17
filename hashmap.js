@@ -57,6 +57,8 @@ class hashMap {
         const existingNode = list.getFromList(key);
         if(existingNode) {
             existingNode.value = value;
+        } else {
+            list.addToList(key, value);
         }
     }
 
