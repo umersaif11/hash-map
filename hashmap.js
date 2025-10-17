@@ -66,6 +66,9 @@ class hashMap {
     length() {
         return this.size;
     }
+    buckets() {
+        return this.buckets;
+    }
 
 }
 
