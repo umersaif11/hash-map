@@ -67,7 +67,8 @@ class hashMap {
         return this.size;
     }
     entries() {
-        
+        const pairs = [];
+        this.buckets.forEach()
     }
     bucketsArray() {
         return this.buckets;
