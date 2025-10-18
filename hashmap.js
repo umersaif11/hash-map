@@ -18,12 +18,12 @@ class LinkedList {
             while(current.next) {
                 current = current.next;
             }
+            current.next = node;
         }
-        current.next = node;
     }
     getFromList(key) {
         let current = this.head;
-        while(current.next) {
+        while(current) {
             if(current.key === key) {
                 return current;
             }
@@ -66,7 +66,10 @@ class hashMap {
     length() {
         return this.size;
     }
-    buckets() {
+    entries() {
+        
+    }
+    bucketsArray() {
         return this.buckets;
     }
 
