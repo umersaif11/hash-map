@@ -68,7 +68,11 @@ class hashMap {
     }
     entries() {
         const pairs = [];
-        this.buckets.forEach()
+        this.buckets.forEach(list => {
+            if(list !== null) {
+                
+            }
+        })
     }
     bucketsArray() {
         return this.buckets;
