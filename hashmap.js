@@ -70,7 +70,7 @@ class hashMap {
         const pairs = [];
         this.buckets.forEach(list => {
             if(list !== null) {
-                
+                let current = list.head;
             }
         })
     }
