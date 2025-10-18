@@ -76,7 +76,8 @@ class hashMap {
                     current = current.next;
                 }
             }
-        })
+        });
+        return pairs;
     }
     bucketsArray() {
         return this.buckets;
