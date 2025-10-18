@@ -73,6 +73,7 @@ class hashMap {
                 let current = list.head;
                 while(current !== null) {
                     pairs.push([current.key, current.value]);
+                    current = current.next;
                 }
             }
         })
