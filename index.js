@@ -14,5 +14,6 @@ let test = new hashMap();
  test.set('jacket', 'blue')
  test.set('kite', 'pink')
  test.set('lion', 'golden')
+  test.set('shoe', 'offwhite')
 console.log(test.bucketsArray());
 console.log(test.entries());
