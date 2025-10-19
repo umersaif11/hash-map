@@ -17,3 +17,7 @@ let test = new hashMap();
   test.set('shoe', 'offwhite')
 console.log(test.bucketsArray());
 console.log(test.entries());
+console.log(test.get('grape'));
+console.log(test.get('grapes'));
+console.log(test.has('frog'));
+console.log(test.has('frogs'));
