@@ -62,6 +62,8 @@ class hashMap {
             list.addToList(key, value);
             this.size++;
         }
+        let currentLoadFactor = this.size / this.capacity;
+        
     }
     length() {
         return this.size;
