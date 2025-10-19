@@ -14,3 +14,5 @@ let test = new hashMap();
  test.set('jacket', 'blue')
  test.set('kite', 'pink')
  test.set('lion', 'golden')
+console.log(test.bucketsArray());
+console.log(test.entries());
