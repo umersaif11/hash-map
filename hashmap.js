@@ -63,7 +63,9 @@ class hashMap {
             this.size++;
         }
         let currentLoadFactor = this.size / this.capacity;
-        
+        if(currentLoadFactor > this.loadfactor) {
+            this.resize();
+        }
     }
     length() {
         return this.size;
