@@ -93,6 +93,7 @@ class hashMap {
                 }
             }
         }
+        return null;
     }
     length() {
         return this.size;
