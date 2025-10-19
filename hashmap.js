@@ -77,6 +77,7 @@ class hashMap {
                 let current = list.head;
                 while(current !== null) {
                     this.set(current.key, current.value);
+                    current = current.next;
                 }
             }
         })
@@ -98,7 +99,7 @@ class hashMap {
         return pairs;
     }
     bucketsArray() {
-        return this.buckets;
+        return this.buckets.length;
     }
 
 }
