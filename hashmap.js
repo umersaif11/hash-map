@@ -51,7 +51,7 @@ class hashMap {
     }
     set(key, value) {
         const hashValue = this.hash(key);
-        if(this.buckets[hashValue] == null) {
+        if(!this.buckets[hashValue]) {
             this.buckets[hashValue] = new LinkedList();
         }
         const list = this.buckets[hashValue];
@@ -73,9 +73,9 @@ class hashMap {
         this.buckets = new Array(this.capacity);
         this.size = 0;
         oldBucket.forEach(list => {
-            if(list !== null) {
+            if(list) {
                 let current = list.head;
-                while(current !== null) {
+                while(current) {
                     this.set(current.key, current.value);
                     current = current.next;
                 }
@@ -85,15 +85,30 @@ class hashMap {
     get(key) {
         const hashValue = this.hash(key);
         const list = this.buckets[hashValue];
-        if(list !== null) {
+        if(list) {
             let current = list.head;
-            while(current !== null) {
+            while(current) {
                 if(current.key === key) {
                     return current.value;
                 }
+                current = current.next;
             }
         }
         return null;
+    }
+    has(key) {
+        const hashValue = this.hash(key);
+        const list = this.buckets[hashValue];
+        if(list) {
+            let current = list.head;
+            while(current) {
+                if(current.key === key) {
+                    return true;
+                }
+                current = current.next;
+            }
+        }
+        return false;
     }
     length() {
         return this.size;
@@ -101,9 +116,9 @@ class hashMap {
     entries() {
         const pairs = [];
         this.buckets.forEach(list => {
-            if(list !== null) {
+            if(list) {
                 let current = list.head;
-                while(current !== null) {
+                while(current) {
                     pairs.push([current.key, current.value]);
                     current = current.next;
                 }
