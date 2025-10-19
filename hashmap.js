@@ -76,7 +76,7 @@ class hashMap {
             if(list !== null) {
                 let current = list.head;
                 while(current !== null) {
-                    
+                    this.set(current.key, current.value);
                 }
             }
         })
