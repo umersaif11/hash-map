@@ -84,8 +84,9 @@ class hashMap {
     }
     get(key) {
         const hashValue = this.hash(key);
-        if(this.buckets[hashValue] !== null) {
-            
+        const list = this.buckets[hashValue];
+        if(list !== null) {
+            let current = list.head;
         }
     }
     length() {
