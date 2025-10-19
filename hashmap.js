@@ -82,6 +82,9 @@ class hashMap {
             }
         })
     }
+    get(key) {
+        const hashValue = this.hash(key);
+    }
     length() {
         return this.size;
     }
