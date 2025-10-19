@@ -69,6 +69,7 @@ class hashMap {
     }
     resize() {
         const oldBucket = this.buckets;
+        this.capacity = this.capacity * 2;
     }
     length() {
         return this.size;
