@@ -74,7 +74,7 @@ class hashMap {
         this.size = 0;
         oldBucket.forEach(list => {
             if(list !== null) {
-                
+                let current = list.head;
             }
         })
     }
