@@ -88,7 +88,9 @@ class hashMap {
         if(list !== null) {
             let current = list.head;
             while(current !== null) {
-                
+                if(current.key === key) {
+                    return current.value;
+                }
             }
         }
     }
