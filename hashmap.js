@@ -139,6 +139,11 @@ class hashMap {
     length() {
         return this.size;
     }
+    clear() {
+        this.buckets.forEach(list => {
+            
+        })
+    }
     entries() {
         const pairs = [];
         this.buckets.forEach(list => {
