@@ -153,7 +153,7 @@ class hashMap {
         return pairs;
     }
     bucketsArray() {
-        return this.buckets.length;
+        return this.buckets;
     }
 
 }
