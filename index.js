@@ -1,4 +1,4 @@
-import { hashMap } from "./hashmap.js"
+import { hashMap, hashSet } from "./hashmap.js"
 
 let test = new hashMap();
 
@@ -30,3 +30,5 @@ test.set('carrot', 'orange');
 console.log(test.bucketsArray());
 test.clear();
 console.log(test.bucketsArray());
+
+
