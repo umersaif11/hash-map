@@ -140,9 +140,8 @@ class hashMap {
         return this.size;
     }
     clear() {
-        this.buckets.forEach(list => {
-            
-        })
+        this.buckets = new Array(this.capacity);
+        this.size = 0;
     }
     entries() {
         const pairs = [];
