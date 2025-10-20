@@ -143,6 +143,19 @@ class hashMap {
         this.buckets = new Array(this.capacity);
         this.size = 0;
     }
+    keys() {
+        const keys = [];
+        this.buckets.forEach(list => {
+            if(list) {
+                let current = list.head;
+                while(current) {
+                    keys.push(current.key);
+                    current = current.next;
+                }
+            }
+        });
+        return keys;
+    }
     entries() {
         const pairs = [];
         this.buckets.forEach(list => {
