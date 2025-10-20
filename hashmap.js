@@ -113,7 +113,7 @@ class hashMap {
     remove(key) {
         const hashValue = this.hash(key);
         const list = this.buckets[hashValue];
-        if(list) {
+        if(list != null) {
             let current = list.head;
             let previous;
             if(current == null) {
