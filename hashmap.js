@@ -110,6 +110,32 @@ class hashMap {
         }
         return false;
     }
+    remove(key) {
+        const hashValue = this.hash(key);
+        const list = this.buckets[hashValue];
+        if(list) {
+            let current = list.head;
+            let previous;
+            if(current == null) {
+                return false;
+            }
+            if(current.key === key) {
+                list.head = current.next;
+                this.size--;
+                return true;
+            }
+            while(current) {
+                if(current.key === key) {
+                    previous.next = current.next;
+                    this.size--;
+                    return true;
+                }
+                previous = current;
+                current = current.next;
+            }
+        }
+        return false;
+    }
     length() {
         return this.size;
     }
