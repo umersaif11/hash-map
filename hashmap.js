@@ -156,6 +156,19 @@ class hashMap {
         });
         return keys;
     }
+    values() {
+        const values = [];
+        this.buckets.forEach(list => {
+            if(list) {
+                let current = list.head;
+                while(current) {
+                    values.push(current.value);
+                    current = current.next;
+                }
+            }
+        });
+        return values;
+    }
     entries() {
         const pairs = [];
         this.buckets.forEach(list => {
